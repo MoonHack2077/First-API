@@ -1,0 +1,14 @@
+{
+  "name": "rickandmorty",
+  "version": "1.0.0",
+  "description": "Work with rick and morty API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "API"
+  ],
+  "author": "Juan Manuel Arenas Rincon <arenasrinconj@gmail.com>",
+  "license": "ISC"
+}
