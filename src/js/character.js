@@ -1,12 +1,11 @@
 const characters = document.getElementById('characters');
 export default class Character{
-    constructor( { id, name, status, specie, gender, dimension,  img } ){
+    constructor( { id, name, status, specie, gender, img } ){
         this.id = id;
         this.name = name;
         this.status = status;
         this.specie = specie;
         this.gender = gender;
-        this.dimension = dimension;
         this.img = img;
     }
 
@@ -21,8 +20,7 @@ export default class Character{
                 <span class="attribute"><span>Name:</span> ${this.name}</span>
                 <span class="attribute"><span>Specie:</span> ${this.specie}</span>
                 <span class="attribute"><span>Status:</span> ${this.status}</span>  
-                <span class="attribute"><span>Gender:</span> ${this.gender}</span>   
-                <span class="attribute"><span>Dimension:</span> ${this.dimension}</span> 
+                <span class="attribute"><span>Gender:</span> ${this.gender}</span>
             </div>
         </div>    
         `
