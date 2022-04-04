@@ -1,8 +1,10 @@
-import React , { useEffect, useState } from 'react';
+import React , { useEffect, useState, createContext } from 'react';
 import { NavBar } from './Components/NavBar/NavBar.jsx';
 import { Pagination } from './Components/Pagination/Pagination.jsx';
 import { Characters } from './Components/Characters/Characters.jsx';
 import './App.css';
+
+const AppContext = createContext(null);
 
 function App() {
   const [ characters , setCharacters ] = useState([]);
@@ -26,13 +28,15 @@ function App() {
   const onNext = () => fetchData(info.next);
   
   return (
-    <div className="App">
+    <AppContext.Provider className="App" value={{
+      onPrev , onNext , characters , info
+    }}>
       <NavBar/>
-      <Pagination onPrev={onPrev} onNext={onNext} next={info.next} prev={info.prev}/>
-        <Characters characters={characters} />
-      <Pagination onPrev={onPrev} onNext={onNext} next={info.next} prev={info.prev}/>
-    </div>
+      <Pagination />
+        <Characters />
+      <Pagination />
+    </AppContext.Provider>
   );
 }
 
-export { App };
+export { App , AppContext };
