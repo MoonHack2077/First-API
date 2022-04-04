@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { AppContext } from '../../App';
+import './Characters.css';
 
 function Characters(){
     const { characters } = useContext(AppContext);
@@ -8,7 +9,7 @@ function Characters(){
         return (
             <li key={character.id} className="card-character" >
                 <div className="character-img">
-                    <img src={character.image} alt={character.name} className="" />
+                    <img src={character.image} alt={character.name} />
                 </div>
                 <div className="character-info">
                     <ul>
