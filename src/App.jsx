@@ -6,19 +6,20 @@ import './App.css';
 
 function App() {
   const [ characters , setCharacters ] = useState([]);
-  const [ info  , setInfo ] = useState([]);
+  const [ info  , setInfo ] = useState({});
 
   const fetchData = url => {
-    fetch(url)
-    .then(response => response.json())
-    .then(data => {
+    fetch( url )
+    .then( response => response.json() )
+    .then( data => {
        setCharacters(data.results)
         setInfo(data.info)  
     })
+    .catch( error => console.log(error) )
   }
 
   useEffect( ()=>{
-    fetchData();
+    fetchData('https://rickandmortyapi.com/api/character');
   }, [] )
 
   const onPrev = () => fetchData(info.prev);
