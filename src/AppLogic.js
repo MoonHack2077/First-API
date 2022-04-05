@@ -4,7 +4,7 @@ function AppLogic() {
     //Declaring states
     const [ characters , setCharacters ] = useState([]);
     const [ info  , setInfo ] = useState({});
-    const [ loading , setLoading ] = useState(true);
+    const [ loading , setLoading ] = useState(false);
     
     //Function to do fecth and set the states
     const fetchData = url => {
@@ -22,7 +22,7 @@ function AppLogic() {
     }
     
     //useEffect to at the start of the application calls the api url
-    useEffect( ()=>{
+    useEffect( ()=> {
         fetchData('https://rickandmortyapi.com/api/character');
     }, [] )
     
