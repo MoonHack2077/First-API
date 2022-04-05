@@ -2,7 +2,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #000;
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.Modal-message{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 30px;
     color: var(--btn-color-text);
-    position: absolute;
+    background-color: #000;
 }

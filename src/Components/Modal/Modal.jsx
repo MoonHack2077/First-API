@@ -1,21 +1,21 @@
-// import React, { useContext } from 'react';
-// import { AppContext } from '../../App';
-// import './Modal.css';
+import React, { Fragment , useContext } from 'react';
+import { AppContext } from '../../App';
+import './Modal.css';
 
-// function Modal(){
-//     const { loading } = useContext(AppContext);
+function Modal(){
+    const { loading } = useContext(AppContext);
 
-//     const modal = () =>{
-//         return(
-//             <div className='Modal-loading' >
-//                 <p> Loading </p>
-//             </div>
-//         )
-//     }
+    return(
+        <Fragment>
+            { loading ?
+                <div className='Modal-loading' > 
+                    <div className='Modal-message'>
+                        <p> Loading </p> 
+                    </div>
+                </div> 
+             : null }
+        </Fragment>
+    )
+}
 
-//     return(
-//         { modal }
-//     )
-// }
-
-// export { Modal }
+export { Modal }
