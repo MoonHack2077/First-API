@@ -17,3 +17,18 @@
     color: var(--light-blue);
     background-color: #000;
 }
+
+.icon{
+    animation-name: turn;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes turn{
+    0%{
+        transform: rotate(90deg);
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+}

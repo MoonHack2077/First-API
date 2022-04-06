@@ -10,14 +10,16 @@ function AppLogic() {
     const fetchData = url => {
         setLoading(true);
 
-        fetch( url )
-        .then( response => response.json() )
-        .then( data => {
-            setCharacters ( data.results )
-            setInfo( data.info )  
-            setLoading(false);
-        })
-        .catch( error => console.log(error) )
+        setTimeout(()=>{
+            fetch( url )
+            .then( response => response.json() )
+            .then( data => {
+                setCharacters ( data.results )
+                setInfo( data.info )  
+                setLoading(false);
+            })
+            .catch( error => console.log(error) )
+        },3000)
 
     }
     
