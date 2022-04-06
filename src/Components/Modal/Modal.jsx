@@ -9,14 +9,13 @@ function Modal(){
 
     return(
         <Fragment>
-            { loading ?
-                <div className='Modal-loading' > 
+            { loading &&
+                <div className='Modal-container' > 
                     <div className='Modal-message'>
-                        <p> Loading </p> 
-                        <FontAwesomeIcon className='icon' icon={ faSpinner } />
+                        <FontAwesomeIcon icon={ faSpinner } />
                     </div>
                 </div> 
-             : null }
+            }
         </Fragment>
     )
 }

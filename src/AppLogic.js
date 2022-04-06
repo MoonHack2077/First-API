@@ -19,7 +19,7 @@ function AppLogic() {
                 setLoading(false);
             })
             .catch( error => console.log(error) )
-        },3000)
+        },1000)
 
     }
     

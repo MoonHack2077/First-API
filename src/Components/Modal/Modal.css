@@ -1,11 +1,11 @@
-.Modal-loading{
+.Modal-container{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: transparent;
     position: fixed;
     width: 100%;
     min-height: 100vh;
+    background-color: #444;
 }
 
 .Modal-message{
@@ -15,20 +15,18 @@
     width: 200px;
     height: 30px;
     color: var(--light-blue);
-    background-color: #000;
-}
-
-.icon{
+    font-size: 10em;
     animation-name: turn;
+    animation-duration: 1.2s;
     animation-iteration-count: infinite;
-    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-timing-function: cubic-bezier(75, 0.2, 165, 0);
 }
 
 @keyframes turn{
     0%{
-        transform: rotate(90deg);
+        transform: rotate(0deg);
     }
     100%{
-        transform: rotate(180deg);
+        transform: rotate(360deg);
     }
 }
