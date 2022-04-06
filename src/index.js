@@ -1,7 +1,8 @@
 import { createRoot } from 'react-dom/client';
-import './index.css';
 import { App } from './App';
+import './index.css';
 
+//Using the v18 of React
 createRoot(
   document.getElementById('root')
 ).render(

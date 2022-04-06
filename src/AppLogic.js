@@ -15,10 +15,10 @@ function AppLogic() {
         .then( data => {
             setCharacters ( data.results )
             setInfo( data.info )  
+            setLoading(false);
         })
         .catch( error => console.log(error) )
 
-        setLoading(false);
     }
     
     //useEffect to at the start of the application calls the api url

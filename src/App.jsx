@@ -15,7 +15,7 @@ function App() {
   return (
     <AppContext.Provider value={{ onPrev , onNext , characters , info , loading }}>
       <NavBar/>
-      {loading && <Modal />}
+      <Modal />
       <Pagination />
         <Characters />
       <Pagination />

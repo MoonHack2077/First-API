@@ -10,8 +10,8 @@ li{
 button{
   outline: none;
   border: none;
-  color: var(--btn-color-text);
-  outline: 2px solid var(--btn-color-text);
+  color: var(--light-blue);
+  outline: 2px solid var(--light-blue);
   padding: var(--btn-padding);
   border-radius: 10px;
   background-color: var(--white);
