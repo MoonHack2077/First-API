@@ -1,5 +1,5 @@
 import React, { Fragment , useContext } from 'react';
-import { AppContext } from '../../App';
+import { AppContext } from '../../App/App';
 import './Pagination.css'
 
 function Pagination(){

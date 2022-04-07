@@ -1,8 +1,8 @@
 import React , { createContext } from 'react';
-import { NavBar } from './Components/NavBar/NavBar.jsx';
-import { Pagination } from './Components/Pagination/Pagination.jsx';
-import { Characters } from './Components/Characters/Characters.jsx';
-import { Modal } from './Components/Modal/Modal.jsx';
+import { NavBar } from '../Components/NavBar/NavBar.jsx';
+import { Pagination } from '../Components/Pagination/Pagination.jsx';
+import { Characters } from '../Components/Characters/Characters.jsx';
+import { Modal } from '../Components/Modal/Modal.jsx';
 import { AppLogic } from './AppLogic';
 import './App.css';
 
