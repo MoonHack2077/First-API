@@ -8,6 +8,7 @@ Such as:
 
 In the project directory, you can run:
 
+**FOR DEVELOPERS**
 ### `npm start`
 
 Runs the app in the development mode.\
