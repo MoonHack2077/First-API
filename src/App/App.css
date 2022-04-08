@@ -1,3 +1,8 @@
+.App{
+  min-height: 100vh;
+  background-color: #444;
+}
+
 a{
   text-decoration: none;
   color: var(--white);
@@ -14,8 +19,9 @@ button{
   outline: 2px solid var(--light-blue);
   padding: var(--btn-padding);
   border-radius: 10px;
-  background-color: var(--white);
+  background-color: #333;
   cursor: pointer;
+  filter: saturate(190%);
 }
 
 button:hover{

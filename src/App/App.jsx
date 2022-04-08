@@ -2,7 +2,7 @@ import React , { createContext } from 'react';
 import { NavBar } from '../Components/NavBar/NavBar.jsx';
 import { Pagination } from '../Components/Pagination/Pagination.jsx';
 import { Characters } from '../Components/Characters/Characters.jsx';
-import { Modal } from '../Components/Modal/Modal.jsx';
+import { Loading } from '../Components/Loading/Loading.jsx';
 import { AppLogic } from './AppLogic';
 import './App.css';
 
@@ -14,11 +14,13 @@ function App() {
 
   return (
     <AppContext.Provider value={{ onPrev , onNext , characters , info , loading }}>
-      <NavBar/>
-      <Modal />
-      <Pagination />
-        <Characters />
-      <Pagination />
+      <div className='App' >
+        <NavBar/>
+        <Loading />
+        <Pagination />
+          <Characters />
+        <Pagination />
+      </div>
     </AppContext.Provider>
   );
 

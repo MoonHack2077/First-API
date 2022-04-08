@@ -6,11 +6,3 @@
     grid-template-columns: repeat( auto-fill, minmax(min(100%,300px),1fr) );
     padding: 0 20px;
 }
-
-.card-character{
-    outline: 2px solid var(--light-blue);
-}
-
-.character-info{
-    text-align: center;
-}

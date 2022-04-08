@@ -1,0 +1,7 @@
+.card-character{
+    outline: 2px solid var(--light-blue);
+}
+
+.character-info{
+    text-align: center;
+}

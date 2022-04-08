@@ -1,9 +1,10 @@
 import React , { Fragment } from 'react';
+import './Character.css';
 
-function Character({ id , image, name , gender , origin , episode , status }){
+function Character({ image, name , gender , origin , episode , status }){
     return(
          <Fragment>
-             <li key={id} className="card-character" >
+             <li key={name} className="card-character" >
                 <div className="character-img">
                     <img src={image} alt={name} />
                 </div>

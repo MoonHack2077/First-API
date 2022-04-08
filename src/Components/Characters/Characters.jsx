@@ -14,7 +14,7 @@ function Characters(){
                     { characters.map( character => {
                         return (
                             <Character 
-                                id={character.id}
+                                key={character.id}
                                 name={character.name}
                                 status={character.status}
                                 gender={character.gender}
