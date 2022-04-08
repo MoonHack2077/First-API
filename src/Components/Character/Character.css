@@ -1,7 +1,41 @@
 .card-character{
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    padding: 15rem 0 0;
     outline: 2px solid var(--light-blue);
+    position: relative; 
+    overflow: hidden;
+    transition: all 1s ease;
 }
 
-.character-info{
+.card-character:hover .card-content{
+    bottom: 0;
+    animation-name: goUp;
+    animation-duration: 1.2s;
+    animation-timing-function: cubic-bezier(75, 0.2, 165, 0);
+}
+
+@keyframes goUp{
+    from{ bottom: -130px; }
+    to{ bottom: 0; }
+}
+
+.card-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1.4em;
+    color: var(--light-blue);
+    padding: 1.5rem;
+    background-color: #000;
+    position: absolute; 
+    width: 100%;
+    bottom: -1200px;
+    border-top: 8px solid var(--light-blue);
+}
+.card-name-character{
     text-align: center;
+    padding: 0.5rem;
+    background-color: #333;
+    outline: 2px solid var(--light-blue);
 }
