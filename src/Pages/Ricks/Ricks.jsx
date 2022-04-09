@@ -1,6 +1,7 @@
 import React , { useContext } from 'react';
 import { AppContext } from '../../App/App.jsx'
 import { API_URL } from '../../API';
+import { Characters } from '../../Components/Characters/Characters.jsx';
 
 function Ricks(){
     const { info , setCharacters } = useContext(AppContext);
@@ -11,11 +12,10 @@ function Ricks(){
         .then( data => {
             if( data.name.includes('Rick') ) ricks.push(data);
         })
-        .catch(error => console.log(error))
+        setCharacters(ricks);
     }
-    setCharacters(ricks);
     return(
-        <div> xd</div>
+        <Characters />
     )
 }
 
