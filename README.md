@@ -5,12 +5,12 @@ In this project i am using the awesome Facebook´s library React.js to practice 
 Such as:
 - Fetch to an API
 - useState and useEffect Hooks
+<!-- - react-router-dom, commented, for now...-->
 
-In the project directory, you can run:
+To Start the project run:
 
-**FOR DEVELOPERS**
+### `npm clone git@github.com:MoonHack2077/First-API.git`
+### `cd rickandmorty`
+### `npm i`
 ### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
