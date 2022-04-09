@@ -15,7 +15,7 @@ function AppLogic() {
         setLoading(true);
 
         //setTimeout to do a loading effect more durable
-        setTimeout(()=>{
+        setTimeout( () => {
             fetch( url )
             .then( response => response.json() )
             .then( data => {
@@ -29,21 +29,13 @@ function AppLogic() {
     }
     
     //useEffect to at the start of the application calls the api url
-    useEffect( ()=> {
+    useEffect( () => {
         fetchData('https://rickandmortyapi.com/api/character');
     }, [] )
     
     
-    /**
-     * Function to do a fetch with the new link that info state has
-     * @returns called to fetchData function with the link of prev page
-     */
+    //Functions to do fetch with the new link that info state has
     const onPrev = () => fetchData( info.prev );
-
-    /**
-     * Function to do a fetch with the new link that info state has
-     * @returns called to fetchData function with the link of next page
-     */
     const onNext = () => fetchData( info.next );
 
     return { characters , info , onPrev , onNext , loading }
