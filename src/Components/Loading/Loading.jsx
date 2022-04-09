@@ -11,7 +11,7 @@ function Loading(){
         <Fragment>
             { loading &&
                 <div className='Loading-container' > 
-                    <div className='Loading-message'>
+                    <div className='Loading-icon-container'>
                         <FontAwesomeIcon icon={ faSpinner } />
                     </div>
                 </div> 
