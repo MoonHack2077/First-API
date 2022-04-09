@@ -1,5 +1,4 @@
 import React, { Fragment , useContext } from 'react';
-// import { } from 'react-router-dom';
 import { AppContext } from '../../App/App.jsx';
 import { Character } from '../Character/Character';
 import './Characters.css';
@@ -16,11 +15,7 @@ function Characters(){
                             <Character 
                                 key={character.id}
                                 name={character.name}
-                                status={character.status}
-                                gender={character.gender}
-                                origin={character.origin}
                                 image={character.image}
-                                episode={character.episode}
                              />
                         )
                     }) 

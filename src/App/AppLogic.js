@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { API_URL } from '../API';
 
 function AppLogic() {
     //Declaring states
@@ -30,7 +31,7 @@ function AppLogic() {
     
     //useEffect to at the start of the application calls the api url
     useEffect( () => {
-        fetchData('https://rickandmortyapi.com/api/character');
+        fetchData(API_URL);
     }, [] )
     
     
@@ -38,7 +39,7 @@ function AppLogic() {
     const onPrev = () => fetchData( info.prev );
     const onNext = () => fetchData( info.next );
 
-    return { characters , info , onPrev , onNext , loading }
+    return { characters , info , onPrev , onNext , loading , setCharacters }
 }
 
 export { AppLogic }
