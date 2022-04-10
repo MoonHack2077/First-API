@@ -39,7 +39,34 @@ function AppLogic() {
     const onPrev = () => fetchData( info.prev );
     const onNext = () => fetchData( info.next );
 
-    return { characters , info , onPrev , onNext , loading , setCharacters }
+
+    
+    const ricks = [];
+
+    async function getCharacter(id){
+        const characters = await fetch(`${API_URL}/${id}`)
+        const response = await characters.json();
+        if( response.name.includes('Rick') ) ricks.push(response);
+        // return  {
+        //     id:response.id,
+        //     name:response.name,
+        //     status:response.status,
+        //     specie:response.species,
+        //     gender:response.gender,
+        //     img:response.image
+        // }
+    }
+
+    const xd = () => {
+        for( let i=1 ; i<=info.count ; i++ ){
+            getCharacter(i);
+        }
+
+        setCharacters(ricks);
+        return true;
+    }
+
+    return { characters , info , onPrev , onNext , loading , xd }
 }
 
 export { AppLogic }
