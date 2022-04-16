@@ -1,11 +1,11 @@
 import React, { Fragment , useContext } from 'react';
-import { AppContext } from '../../App/App';
+import { HomeContext } from '../../Pages/Home/Home.jsx';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSpinner } from '@fortawesome/free-solid-svg-icons';
 import './Loading.css';
 
 function Loading(){
-    const { loading } = useContext(AppContext);
+    const { loading } = useContext(HomeContext);
 
     return(
         <Fragment>

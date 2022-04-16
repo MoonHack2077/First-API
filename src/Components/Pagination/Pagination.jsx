@@ -1,9 +1,9 @@
 import React, { Fragment , useContext } from 'react';
-import { AppContext } from '../../App/App';
+import { HomeContext } from '../../Pages/Home/Home.jsx';
 import './Pagination.css'
 
 function Pagination(){
-    const { info , onPrev , onNext , loading } = useContext(AppContext);
+    const { info , onPrev , onNext , loading } = useContext(HomeContext);
 
     return(
         <Fragment>

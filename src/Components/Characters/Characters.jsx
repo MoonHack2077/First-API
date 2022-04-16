@@ -1,11 +1,10 @@
-import React, { Fragment , useContext } from 'react';
-import { AppContext } from '../../App/App.jsx';
+import React, { Fragment, useContext } from 'react';
+import { HomeContext } from '../../Pages/Home/Home.jsx';
 import { Character } from '../Character/Character';
 import './Characters.css';
 
 function Characters(){
-    const { characters , loading } = useContext(AppContext);
-
+    const { characters , loading } = useContext(HomeContext);
     return(
         <Fragment>
             { !loading && 

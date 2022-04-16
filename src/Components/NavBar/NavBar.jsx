@@ -1,4 +1,5 @@
 import React from 'react';
+//import { BrowserRouter as Link  } from 'react-router-dom';
 import './NavBar.css';
 
 function NavBar(){
@@ -7,10 +8,8 @@ function NavBar(){
             <div className="container-left">
                 <a href="/">Rick and Morty API</a>
             </div>
-            <div className="container-right">
-                <a href="/Ricks">Ricks</a>
-                <a href="/Mortys">Mortys</a>
-            </div>
+            {/* <div className="container-right">
+            </div> */}
         </nav>
     )
 }
