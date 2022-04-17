@@ -1,7 +1,9 @@
 import React , { Fragment } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Character.css';
 
-function Character({ image, name }){
+function Character({ image, name, id }){
+    const navigate = useNavigate()
     return(
          <Fragment>
              <li key={name} className="card-character" style={{
@@ -11,7 +13,7 @@ function Character({ image, name }){
                     <div className='card-name-character'>
                         <p>{name}</p>
                     </div>
-                    <button>Learn More</button>
+                    <button onClick={()=>navigate(`/profile/${id}`)} >Learn More</button>
                 </div>
             </li> 
          </Fragment>

@@ -5,12 +5,12 @@ In this project i am using the awesome Facebook´s library React.js to practice 
 Such as:
 - Fetch to an API
 - useState and useEffect Hooks
-<!-- - react-router-dom, commented, for now...-->
+- react-router-dom
 
-To Start the project run:
+## To Start the project run:
 
 ### `npm clone git@github.com:MoonHack2077/First-API.git`
-### `cd rickandmorty`
+### `cd First-API`
 ### `npm i`
 ### `npm start`
 

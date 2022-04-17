@@ -1,16 +1,13 @@
-import React, { Fragment , useContext } from 'react';
-import { AppContext } from '../../App/App';
+import React, { Fragment } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSpinner } from '@fortawesome/free-solid-svg-icons';
 import './Loading.css';
 
-function Loading(){
-    const { loading } = useContext(AppContext);
-
+function Loading({ loading }){
     return(
         <Fragment>
             { loading &&
-                <div className='Loading-container' > 
+                <div className='Modal-container' > 
                     <div className='Loading-icon-container'>
                         <FontAwesomeIcon icon={ faSpinner } />
                     </div>
