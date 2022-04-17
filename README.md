@@ -10,7 +10,7 @@ Such as:
 ## To Start the project run:
 
 ### `npm clone git@github.com:MoonHack2077/First-API.git`
-### `cd rickandmorty`
+### `cd First-API`
 ### `npm i`
 ### `npm start`
 
