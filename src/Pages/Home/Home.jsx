@@ -41,7 +41,7 @@ function Home(){
 
     return(
         <HomeContext.Provider value={{ info, onPrev, onNext, characters , setCharacters, loading }}>        
-          <Loading />
+          <Loading loading={loading}/>
             <Pagination />
                 <Characters />
             <Pagination />

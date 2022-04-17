@@ -8,8 +8,6 @@ function NavBar(){
             <div className="container-left">
                 <a href="/">Rick and Morty API</a>
             </div>
-            {/* <div className="container-right">
-            </div> */}
         </nav>
     )
 }

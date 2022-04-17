@@ -1,5 +1,6 @@
-export const API_URL = 'https://rickandmortyapi.com/api/character';
 
+
+export const API_URL = 'https://rickandmortyapi.com/api/character';
  
 /**
   * Function to get all characters
@@ -29,5 +30,3 @@ export async function getCharacter(id){
         console.log(error)
     }
 }
-
-//export { getResultCharacters , getCharacter }
